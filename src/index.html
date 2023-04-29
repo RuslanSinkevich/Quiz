@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <div>
+    <form class="form-quiz" action="">
+      <div class="quiz-form__sliders">
+
+        <!-- slide -->
+        <div class="quiz-form__slide">
+          <div class="quiz-form__header">
+            <div class="quiz-form__question">
+              Для кого вы ищете учебное заведение?
+            </div>
+            <div class="quiz-form__paganation"></div>
+          </div>
+          <div class="quiz-form__body" page="1">
+            <input id="radio-1" type="radio" class="quiz-form__radio" name="radio" value="1" checked />
+            <label for="radio-1" class="quiz-form__radio-label">
+              <div class="quiz-form__radio-img">Себе</div>
+            </label>
+            <input id="radio-2" type="radio" class="quiz-form__radio" name="radio" value="2" />
+            <label for="radio-2" class="quiz-form__radio-label">
+              <span class="quiz-form__radio-img">Супругу/супруге</span>
+            </label>
+            <input id="radio-3" type="radio" class="quiz-form__radio" name="radio" value="3" />
+            <label for="radio-3" class="quiz-form__radio-label">
+              <span class="quiz-form__radio-img">Родственнику</span>
+            </label>
+            <input id="radio-4" type="radio" class="quiz-form__radio" name="radio" value="3" />
+            <label for="radio-4" class="quiz-form__radio-label">
+              <span class="quiz-form__radio-img">Родственнику</span>
+            </label>
+          </div>
+        </div>
+
+        <!-- slide -->
+        <div class="quiz-form__slide">
+          <div class="quiz-form__header">
+            <div class="quiz-form__question">Для кого вы ищет заведение?</div>
+            <div class="quiz-form__paganation"></div>
+          </div>
+          <div class="quiz-form__body">
+            <div class="quiz-select">
+              <button type="button" class="quiz-select__toggle">
+                <div>
+                  <p>Машина</p>
+                  <p class="quiz-select__toggle-selected">
+                    Выберите из списка
+                  </p>
+                </div>
+              </button>
+              <div class="quiz-select__dropdown">
+                <ul class="quiz-select__options">
+                  <li class="quiz-select__option quiz-select__option-selected" data-value="volkswagen" data-index="">
+                    Volkswagen
+                  </li>
+                  <li class="quiz-select__option" data-value="ford" data-index="">
+                    Ford
+                  </li>
+                  <li class="quiz-select__option" data-value="toyota" data-index="">
+                    Toyota
+                  </li>
+                  <li class="quiz-select__option" data-value="ford" data-index="">
+                    Ford
+                  </li>
+                  <li class="quiz-select__option" data-value="toyota" data-index="">
+                    Toyota
+                  </li>
+                  <li class="quiz-select__option" data-value="ford" data-index="">
+                    Ford
+                  </li>
+                  <li class="quiz-select__option" data-value="toyota" data-index="">
+                    Toyota
+                  </li>
+                  <li class="quiz-select__option" data-value="ford" data-index="">
+                    Ford
+                  </li>
+                  <li class="quiz-select__option" data-value="toyota" data-index="">
+                    Toyota
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- slide -->
+        <div class="quiz-form__slide">
+          <div class="quiz-form__header">
+            <div class="quiz-form__question">Для кого вы ищет заведение?</div>
+            <div class="quiz-form__paganation"></div>
+          </div>
+          <div class="quiz-form__body">
+            <label for="radio-4" class="quiz-form__radio-label">
+              <input id="radio-4" type="radio" class="quiz-form__radio" name="radio2" value="1" />
+              <div class="quiz-form__radio-img">Себе</div>
+            </label>
+            <label for="radio-5" class="quiz-form__radio-label">
+              <input id="radio-5" type="radio" class="quiz-form__radio" name="radio2" value="2" />
+              <span class="quiz-form__radio-img">Супругу/супруге</span>
+            </label>
+            <label for="radio-6" class="quiz-form__radio-label">
+              <input id="radio-6" type="radio" class="quiz-form__radio" name="radio2" value="3" />
+              <span class="quiz-form__radio-img">Родственнику</span>
+            </label>
+          </div>
+        </div>
+        <!-- slide end -->
+        <div class="quiz-form__slide">
+          <div class="quiz-form__header">
+            <div class="quiz-form__question">
+              Ваша подборка готова! 🥳 Куда нам отправить её?
+            </div>
+            <div class="quiz-form__paganation"></div>
+          </div>
+          <div class="quiz-form__body">
+            <input type="text" class="quiz-form__text" placeholder="Как вас зовут?" />
+            <input type="text" class="quiz-form__text" placeholder="Номер телефона" />
+            <input type="text" class="quiz-form__text" placeholder="E-mail" />
+            <button class="quiz-form__btn quiz-form__btn-end" type="submit" type="button">
+              <span>Получить подборку </span>
+            </button>
+            <div class="quiz-form__slide_end_text">
+              Нажимая на кнопку, вы даете согласие на обработку своих
+              <a href="#">Персональных данных</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="quiz-form__footer">
+        <div>
+          <button class="quiz-form__btn quiz-form__btn-back" type="button">
+            <span>
+              < Назад </span>
+          </button>
+        </div>
+        <div>
+          <button class="quiz-form__btn quiz-form__btn-forward" type="button">
+            <span>Далее ></span>
+          </button>
+        </div>
+      </div>
+    </form>
+  </div>
+</body>
+
+</html>

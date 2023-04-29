@@ -1,0 +1,98 @@
+$nameSelect: "quiz";
+
+.#{$nameSelect}-select {
+  position: relative;
+}
+
+.#{$nameSelect}-select__toggle {
+  display: flex;
+  width: 100%;
+  height: 56px;
+  border: 1px solid #383838;
+  border-radius: 16px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 16px;
+  &::after {
+    width: 0.75rem;
+    height: 0.75rem;
+    background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" height="100" width="100"%3E%3Cpath d="M97.625 25.3l-4.813-4.89c-1.668-1.606-3.616-2.41-5.84-2.41-2.27 0-4.194.804-5.777 2.41L50 52.087 18.806 20.412C17.223 18.805 15.298 18 13.03 18c-2.225 0-4.172.804-5.84 2.41l-4.75 4.89C.813 26.95 0 28.927 0 31.23c0 2.346.814 4.301 2.439 5.865l41.784 42.428C45.764 81.174 47.689 82 50 82c2.268 0 4.215-.826 5.84-2.476l41.784-42.428c1.584-1.608 2.376-3.563 2.376-5.865 0-2.26-.792-4.236-2.375-5.932z"/%3E%3C/svg%3E');
+    background-size: cover;
+    content: "";
+  }
+  div p{
+    display: flex;
+    align-items: start;
+  }
+  div p:first-child{
+    font-size: 12px;
+    color: #9B9B9B;
+  }
+}
+
+.#{$nameSelect}-select__dropdown {
+  position: absolute;
+  right: 0;
+  left: 0;
+  z-index: 2;
+  padding: 6px;
+  display: none;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.08);
+  border-radius: 16px;
+}
+
+.quiz-select__options{
+  max-height: 160px;
+  overflow-y: auto;
+}
+
+
+.#{$nameSelect}-select__option {
+  display: flex;
+  padding: 0.375rem 0.75rem;
+  &::before {
+    flex-shrink: 0;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    background-image: url("../img/checked.png");
+    background-size: cover;
+    content: "";
+  }
+}
+
+.#{$nameSelect}-select__option-selected {
+  display: flex;
+  align-items: center;
+  height: 52px;
+  border-bottom: 1px solid rgb(56, 56, 56, 0.1);
+
+  &::before {
+    background-position-x: 100%;
+    content: "";
+  }
+}
+
+.#{$nameSelect}-select__option:hover {
+  background-color: #f5f5f5;
+  cursor: pointer;
+  transition: 0.2s background-color ease-in-out;
+}
+
+
+// Полоса прокрутки
+/* Работает в Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #D8D8D8; 
+}
+/* Работает в Chrome, Edge и Safari */
+*::-webkit-scrollbar {
+  width: 4px;
+}
+*::-webkit-scrollbar-thumb {
+  background-color: #D8D8D8;
+  border-radius: 20px;
+  width: 4px;
+}
